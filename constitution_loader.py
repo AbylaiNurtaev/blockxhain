@@ -25,4 +25,8 @@ class ConstitutionLoader:
     
     def _split_text(self, text: str) -> List[str]:
         """Внутренний метод для разбиения текста на чанки."""
+        return self.text_splitter.split_text(text)
+    
+    def split_text(self, text: str) -> List[str]:
+        """Разбивает текст на чанки."""
         return self.text_splitter.split_text(text) 
